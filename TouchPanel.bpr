@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="output\TouchPanel.exe"/>
+    <OBJFILES value="output\TeeDemo.obj output\Unit2.obj output\DPF.obj output\Comm.obj 
+      output\U_LCD_RGB.obj output\send_slider.obj output\video.obj 
+      output\tcon.obj output\CA200SRVRLib_TLB.obj output\U_Adjust.obj"/>
+    <RESFILES value="TeeDemo.res"/>
+    <IDLFILES value=""/>
+    <IDLGENFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES) U_LCD_RGB.dfm tcon.dfm U_Adjust.dfm"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value="active_vc_test.lib bcb2kaxserver.lib vcl.lib rtl.lib teedb.lib teeui.lib 
+      vclx.lib bcbsmp.lib tee.lib"/>
+    <SPARELIBS value="tee.lib bcbsmp.lib vclx.lib teeui.lib teedb.lib rtl.lib vcl.lib 
+      bcb2kaxserver.lib active_vc_test.lib"/>
+    <PACKAGES value="vclx.bpi rtl.bpi vcl.bpi tee.bpi teedb.bpi teeui.bpi"/>
+    <PATHCPP value=".;&quot;C:\Program Files\Borland\CBuilder6\Imports&quot;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value=""/>
+    <SYSDEFINES value="NO_STRICT"/>
+    <MAINSOURCE value="TeeDemo.cpp"/>
+    <INCLUDEPATH value="&quot;C:\Program Files\Borland\CBuilder6\Imports&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;&quot;C:\Program Files\Borland\CBuilder6\Imports&quot;;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-aus"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <IDLCFLAGS value="-I&quot;C:\Program Files\Borland\CBuilder6\Imports&quot; 
+      -I&quot;C:\Program Files\Borland\CBuilder6\Projects&quot; -I$(BCB)\include 
+      -I$(BCB)\include\vcl -src_suffix cpp"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -xp -Tkh30000 -X- -a8 -b- -k- -vi 
+      -c -tW -tWM"/>
+    <PFLAGS value="-N2output -N0output -$Y- -$L- -$D- -$A8 -H -W -v -JPHN -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zn"/>
+    <LFLAGS value="-loutput -Ioutput -D&quot;&quot; -aa -Tpe -x -Gn -w"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0w32.obj sysinit.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cp32mt.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="TeeDemo.cpp" FORMNAME="" UNITNAME="TeeDemo" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="TeeDemo.res" FORMNAME="" UNITNAME="TeeDemo" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Unit2.cpp" FORMNAME="" UNITNAME="Unit2" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="DPF.cpp" FORMNAME="" UNITNAME="DPF" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Comm.cpp" FORMNAME="" UNITNAME="Comm" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="U_LCD_RGB.cpp" FORMNAME="LCD_RGB" UNITNAME="U_LCD_RGB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Receive.h" FORMNAME="" UNITNAME="Receive.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="send_slider.h" FORMNAME="" UNITNAME="send_slider.h" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="send_slider.cpp" FORMNAME="" UNITNAME="send_slider.cpp" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="video.cpp" FORMNAME="" UNITNAME="video" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tcon.cpp" FORMNAME="tcon_form" UNITNAME="tcon" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="C:\Program Files\Borland\CBuilder6\Imports\CA200SRVRLib_TLB.cpp" FORMNAME="" UNITNAME="CA200SRVRLib_TLB" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CA200Srvr.tli" FORMNAME="" UNITNAME="CA200Srvr.tli" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="CA200Srvr.tlh" FORMNAME="" UNITNAME="CA200Srvr.tlh" CONTAINERID="" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="U_Adjust.cpp" FORMNAME="panel_adjust_form" UNITNAME="U_Adjust" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1033
+CodePage=1252
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[Excluded Packages]
+c:\program files\borland\cbuilder6\Bin\dclite60.bpl=Borland Integrated Translation Environment
+
+[HistoryLists\hlIncludePath]
+Count=3
+Item0=C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\include;$(BCB)\include\vcl
+Item2=$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=4
+Item0=$(BCB)\Projects\Lib;C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Program Files\Borland\CBuilder6\Imports;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item2=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\lib\obj;$(BCB)\lib
+Item3=$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[HistoryLists\hlIntOutputDir]
+Count=1
+Item0=output
+
+[HistoryLists\hlFinalOutputDir]
+Count=2
+Item0=output\
+Item1=output
+
+[HistoryLists\hIBPIOutputDir]
+Count=1
+Item0=output
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=0
+LinkCGLIB=0
+
+[CORBA]
+AddServerUnit=1
+AddClientUnit=1
+PrecompiledHeaders=1
+  </IDEOPTIONS>
+</PROJECT>
